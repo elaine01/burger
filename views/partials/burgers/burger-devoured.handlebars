@@ -1,0 +1,6 @@
+<form action="eat/{{this.id}}?_method=PUT" method="POST">
+	<input type="hidden" name="devoured" value="1">
+	<button type="submit" class="change-eat" data-id="{{id}}" data-eat="{{devoured}}">
+		{{#if devoured}} EAT NOW!{{/if}}
+	</button>
+</form>

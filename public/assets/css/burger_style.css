@@ -1,0 +1,24 @@
+body {
+	background-color: #262223 !important;
+	color: #fcb524 !important;
+}
+
+#order-btn, #newBurger, .change-eat {
+	color: #333 !important;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.ordered, .devoured {
+	color: #ffe8bb;
+}
+
+.header {
+	margin-top: 15%;
+}
+
+#burger-name {
+	font-size: 2em;
+}

@@ -1,0 +1,48 @@
+<div class="container text-center header">
+
+	<h1> Create Your Burger Below </h1>
+
+	<form class="create-update-form" action="/order" method="POST">
+
+		<div class="form-group">
+			<br><br>
+			<label for="newBurger" id="burger-name"> Burger Name: </label>
+			<input type="hidden" name="devoured" value="false">
+			<input required type="text" id="newBurger" name="burger_name" onclick="allLetter(burger_name)" placeholder="cheeseburger"><br><br>
+			<button type="submit" id="order-btn">MAKE AN ORDER </button>
+		</div>
+	</form>
+
+</div>
+
+<div class="container text-center">
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<h2 class="underline"> Ordered </h2>
+			<ul>
+				{{#each burgers}}
+					{{#unless this.devoured}}
+						<h4 class="ordered"> {{this.id}}. {{this.burger_name}} </h4>
+						{{> burgers/burger-devoured devoured=true}}
+						<br>
+					{{/unless}}
+				{{/each}}
+			</ul>
+		</div>
+	
+		<div class="col-xs-12 col-sm-6">
+			<h2 class="underline"> Devoured </h2>
+			<ul class="devoured">
+				{{#each burgers}}
+					{{#if this.devoured}}
+						<h4> {{this.id}}. {{this.burger_name}} 
+						<!-- {{> burgers/delete-burger}} -->
+						</h4>
+					{{/if}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
+<a href="http://www.freepik.com">Burger Menu Designed by Freepik</a> <br>
