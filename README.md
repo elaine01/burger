@@ -1,19 +1,22 @@
 # Eat The Burger
 
-A burger-munching app 
+Eat the Burger app lets users order burgers online. When ready, the user clicks on a 'EAT NOW' button under 'Ordered' and the burger will automatically be moved to the 'Devoured' list. Delicious!
 
 
 ## Demo
 App is deployed on Heroku [here](https://burger-magic.herokuapp.com/).
 
+![screenshot](/screenshot/burger-app.png | = 600x511)
+
 ## Installation
 ```
-git clone repo
+git clone or fork repo
 cd into the folder
 npm install
 node server.js
 localhost:8080 in browser
 ```
+
 
 ## Technology
 ```
