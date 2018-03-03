@@ -6,7 +6,8 @@ Eat the Burger app lets users order burgers online. When ready, the user clicks 
 ## Demo
 App is deployed on Heroku [here](https://burger-magic.herokuapp.com/).
 
-<img src="/screenshot/burger-app.png" align="left" height="600" width="511">
+
+<a href="https://burger-magic.herokuapp.com/"><img src="/screenshot/burger-app.png" align="left" height="600" width="511" ></a>
 
 
 
